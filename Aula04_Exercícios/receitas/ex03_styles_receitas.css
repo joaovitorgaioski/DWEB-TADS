@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #CD5656;
+    color: #AF3E3E;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #EAEBD0;
+    width: 40%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #AF3E3E;
+}
+
+.ingredientes, .preparo {
+    text-align: left;
+}
+
+img {
+    width: 500px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #CD5656;
+    border-width: 3px;
+}
+
+li {
+    margin: 10px;
+    padding-left: 5px;
+}
+
+li::marker {
+    color: #913434;
+}
+
+a {
+    text-decoration: none;
+    color: #CD5656;
+}
+
+h1 {
+    color: #CD5656;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
