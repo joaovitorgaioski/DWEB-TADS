@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    color: white;
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.flex-container {
+    background-color: rgb(158, 192, 255);
+    /*Transforma o elemento em flex container*/
+    display: flex;
+    /*Permite que os itens quebrem para a próxima linha, caso precise*/
+    flex-wrap: wrap;
+    /*Espaço igual ao redor de cada item*/
+    justify-content: space-around;
+    /*Alinhamento vertical*/
+    align-items: center;
+    /*Define a direção dos elementos*/
+    flex-direction: row;
+    /*
+    flex-direction: column;
+    gap: 10px;
+    */
+    padding: 20px;
+}

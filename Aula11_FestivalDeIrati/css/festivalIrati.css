@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.apresentacao {
+    height: 100%;
+    background-image: url("../img/apresentacao.jpg");
+    background-position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.descricao {
+    height: 100%;
+    background-image: url("../img/descricao.png");
+    background-position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.descricao .programacao{
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sexta, .sabado, .domingo{
+    width: 500px;
+    background-color: green;
+    border: 5px orange solid;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.programacao {
+    height: 100%;
+    background-position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
