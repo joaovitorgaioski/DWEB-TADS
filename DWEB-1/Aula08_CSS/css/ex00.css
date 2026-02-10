@@ -1,0 +1,50 @@
+body {
+    background-color: bisque;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: tomato;
+}
+
+div {
+    background-color: purple;
+    width: 250px;
+    height: 200px;
+    color: yellow;
+    border: 5px solid yellow;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+
+span {
+    background-color: yellowgreen;
+}
+
+.caixa {
+    background-color: chartreuse;
+    color: tomato;
+    border: 2px solid darkblue;
+    width: 125px;
+    height: 100px;
+}
+
+.titulo {
+    text-decoration: underline;
+}
+
+#unico {
+    background-color: rgb(19, 17, 17);
+    color: beige;
+    border: 5px dotted beige;
+}
+
+/*
+Defina 3 divs, uma dentro da outra.
+Na última deve conter uma imagem.
+A intermediaria deve conter o texto IFPR e a cor da div deve ser azul e texto branco.
+*/

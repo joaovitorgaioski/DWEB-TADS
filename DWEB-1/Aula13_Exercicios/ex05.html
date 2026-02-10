@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex05</title>
+</head>
+
+<body>
+    <script>
+        const nota = []
+        nota.lenght = 4
+        var media = 0
+
+        frequencia = parseInt(prompt("Frequência do aluno (%)"))
+
+        for (i = 0; i < 4; i++) {
+            nota[i] = parseFloat(prompt("Nota " + (i + 1) + " do aluno/a"))
+            media = nota[i] + media
+        }
+        media = media / 4
+
+        if (media >= 7 && frequencia >= 75) {
+            alert("Aprovado. (Média: " + media + ")\n(Frequência: " + frequencia + ")")
+        }
+        else {
+            alert("Reprovado. (Média: " + media + ")\n(Frequência: " + frequencia + ")")
+        }
+    </script>
+</body>
+
+</html>
