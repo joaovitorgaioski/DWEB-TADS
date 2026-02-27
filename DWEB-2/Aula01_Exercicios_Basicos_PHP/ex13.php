@@ -1,7 +1,7 @@
 <?php
 
-$idade = $argv[1];
-$anos = $argv[2];
+$idade = $argv[1] ?? 15;
+$anos = $argv[2] ?? 0;
 
 echo "Idade: " . $idade . "\nContribuiu por: " . $anos . " anos.\n";
 
