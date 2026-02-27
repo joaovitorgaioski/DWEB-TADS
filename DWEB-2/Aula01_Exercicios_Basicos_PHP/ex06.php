@@ -1,12 +1,7 @@
 <?php
 
-$n = $argv[1];
+$n = $argv[1] ?? 0;
 
-if ($n % 2 == 0) {
-    echo "Número par!";
-}
-else{
-    echo "Número impar!";
-}
+echo $n % 2 == 0 ? "Número Par!" : "Número Impar!";
 
 ?>
