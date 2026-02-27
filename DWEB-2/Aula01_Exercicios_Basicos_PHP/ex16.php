@@ -1,6 +1,6 @@
 <?php
 
-$n = $argv[1];
+$n = $argv[1] ?? 0; // Coalescência
 $r = 1;
 
 if ($n >= 0){
