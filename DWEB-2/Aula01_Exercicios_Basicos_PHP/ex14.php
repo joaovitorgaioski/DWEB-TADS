@@ -1,6 +1,6 @@
 <?php
 
-$nota = $argv[1];
+$nota = $argv[1] ?? -1;
 
 if ($nota > 0 && $nota < 60) {
     echo "D";
