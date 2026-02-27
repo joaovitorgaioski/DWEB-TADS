@@ -15,7 +15,7 @@ elseif ($nota >= 90 && $nota <= 100){
     echo "A";
 }
 else{
-    echo "Nota inváida!";
+    echo "Nota inválida!";
 }
 
 ?>
