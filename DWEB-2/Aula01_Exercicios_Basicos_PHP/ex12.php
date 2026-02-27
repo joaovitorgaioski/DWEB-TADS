@@ -1,6 +1,6 @@
 <?php
 
-$idade = $argv[1];
+$idade = $argv[1] ?? 0;
 
 if (($idade >= 16 && $idade < 18) || $idade > 65) {
     echo "Eleitor Facultativo!";
