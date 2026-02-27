@@ -1,13 +1,9 @@
 <?php
 
-$notas = [$argv[1], $argv[2], $argv[3]];
-$media = 0;
+$notas = [$argv[1] ?? 0, $argv[2] ?? 0, $argv[3] ?? 0];
 
-for ($i = 0; $i < 3; $i++){
-    $media = $notas[$i] + $media;
-}
+$media = ($notas[0] + $notas[1] + $notas[2]) / 3;
 
-$media = $media / 3;
 echo "Média das notas: " . $media . "\n";
 
 if($media >= 7){
