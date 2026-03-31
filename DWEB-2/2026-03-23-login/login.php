@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -18,6 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verificar a senha
         if (password_verify($senha, $usuario["senha"])) {
+
+            session_regenerate_id(true);
+
+            $_SESSION['id_usuario'] = $usuario['id'];
+            $_SESSION['nome_usuario'] = $usuario['nome'];
+            $_SESSION['logado'] = true;
+
             header("Location: painel.php");
             exit();
         }
