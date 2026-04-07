@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS login_db;
+CREATE DATABASE login_db;
+ 
+USE login_db;
+ 
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20),
+    data_nascimento DATE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP);

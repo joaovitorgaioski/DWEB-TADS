@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
