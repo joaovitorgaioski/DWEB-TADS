@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    background-color: beige;
+    width: 50%;
+    display: flex;
+}
+
+.produto {
+    background-color: aliceblue;
+}
