@@ -7,8 +7,8 @@ Normalmente criptografamos os cookies, mas para dados não-sensíveis não é to
 */
 date_default_timezone_set('UTC');
 
-$idiomaAtual = "";
 $idiomaPadrao = "pt-br";
+$idiomaAtual = $idiomaPadrao;
 
 if (isset($_COOKIE["idioma"])) {
     $idiomaAtual = $_COOKIE["idioma"];

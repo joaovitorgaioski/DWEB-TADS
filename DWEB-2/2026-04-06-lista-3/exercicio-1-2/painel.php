@@ -15,8 +15,8 @@ $nome_usuario = $_SESSION['nome_usuario'];
 $contador = $_SESSION['contador']++;
 
 // Tema
-$temaEscolhido = "";
 $temaPadrao = "claro";
+$temaEscolhido = $temaPadrao;
 
 if (isset($_COOKIE['tema'])) {
     $temaEscolhido = $_COOKIE["tema"];

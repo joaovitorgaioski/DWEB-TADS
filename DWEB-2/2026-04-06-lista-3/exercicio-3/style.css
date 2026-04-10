@@ -1,15 +1,48 @@
 body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
 }
 
-.container {
-    background-color: beige;
-    width: 50%;
+.produtos {
+    width: 75%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .produto {
-    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(243, 248, 250);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto h2 {
+    font-size: larger;
+    margin: 0;
+}
+
+.produto p {
+    font-size: medium;
+}
+
+.produto h3 {
+    font-size: medium;
+    color: green;
+    margin: 0;
 }

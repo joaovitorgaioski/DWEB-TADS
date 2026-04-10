@@ -10,4 +10,8 @@ CREATE TABLE usuarios (
     data_nascimento DATE,
     email VARCHAR(100) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
-    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE usuarios
+ADD COLUMN ultimo_acesso DATETIME;

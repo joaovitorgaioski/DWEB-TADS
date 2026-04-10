@@ -1,13 +1,30 @@
 <?php
 
+session_start();
+
 require 'db.php';
+
+$produtos = [];
 
 $stm = $conn->prepare("SELECT * FROM tbproduto");
 
 $stm->execute();
 $result = $stm->get_result();
-$produtos = $result->fetch_all(MYSQLI_ASSOC);
 
+// fetch_assoc() retorna linha por linha
+while ($linha = $result->fetch_assoc()) {
+    $produtos[] = $linha;
+}
+
+if (!isset($_SESSION['carrinho']))
+    $_SESSION['carrinho'] = array();
+
+if (isset($_POST['id'])) {
+    array_push($_SESSION['carrinho'], $_POST['id']);
+    header("Location: index.php");
+}
+
+$carrinho = $_SESSION['carrinho'];
 ?>
 
 <!DOCTYPE html>
@@ -21,15 +38,26 @@ $produtos = $result->fetch_all(MYSQLI_ASSOC);
 </head>
 
 <body>
-    <div class="container">
-        <?php foreach ($produtos as $produto) : ?>
+
+    <div class="produtos">
+        <?php foreach ($produtos as $produto): ?>
             <div class="produto">
                 <h2><?= htmlspecialchars($produto["nome"]); ?></h2>
                 <p><?= htmlspecialchars($produto["descricao"]); ?></p>
                 <h3>R$ <?= htmlspecialchars($produto["preco"]); ?></h3>
+                <form method="POST">
+                    <input type="hidden" name="id" value="<?= $produto['id'] ?>">
+                    <input type="submit" value="Adicionar ao Carrinho">
+                </form>
             </div>
         <?php endforeach; ?>
     </div>
+
+    <button>
+        <h2>Carinho de Compras</h2>
+        <h3>Itens</h3>
+    </button>
+
 </body>
 
 </html>
