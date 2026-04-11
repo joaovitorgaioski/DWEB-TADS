@@ -46,3 +46,21 @@ body {
     color: green;
     margin: 0;
 }
+
+.btn {
+    background-color: rgb(243, 240, 240);
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+table, th, td {
+  border: 1px solid;
+  font-size: large;
+  border-collapse: collapse;
+  padding:10px;
+  text-align: center;
+}

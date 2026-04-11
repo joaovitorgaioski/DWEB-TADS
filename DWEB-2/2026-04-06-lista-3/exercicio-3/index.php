@@ -11,7 +11,7 @@ $stm = $conn->prepare("SELECT * FROM tbproduto");
 $stm->execute();
 $result = $stm->get_result();
 
-// fetch_assoc() retorna linha por linha
+// fetch_assoc() retorna linha a linha
 while ($linha = $result->fetch_assoc()) {
     $produtos[] = $linha;
 }
@@ -24,7 +24,8 @@ if (isset($_POST['id'])) {
     header("Location: index.php");
 }
 
-$carrinho = $_SESSION['carrinho'];
+$qtdCarrinho = count($_SESSION['carrinho']);
+
 ?>
 
 <!DOCTYPE html>
@@ -53,10 +54,13 @@ $carrinho = $_SESSION['carrinho'];
         <?php endforeach; ?>
     </div>
 
-    <button>
-        <h2>Carinho de Compras</h2>
-        <h3>Itens</h3>
-    </button>
+    <a href="carrinho.php" class="btn">
+        <h3>
+            Carrinho de Compras
+            <br>
+            <?= $qtdCarrinho ?> Itens
+        </h3>
+    </a>
 
 </body>
 
