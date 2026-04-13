@@ -1,0 +1,93 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.produtos {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(243, 248, 250);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produto h2 {
+    font-size: larger;
+    margin: 0;
+}
+
+.produto p {
+    font-size: medium;
+    overflow: auto;
+}
+
+.produto h3 {
+    font-size: medium;
+    color: green;
+    margin: 0;
+}
+
+.btn {
+    background-color: rgb(243, 240, 240);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(235, 233, 233);
+}
+
+table, th, td {
+  border: 1px solid;
+  font-size: large;
+  border-collapse: collapse;
+  padding:10px;
+  text-align: center;
+}
+
+.historico {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.historico .produto {
+    color: rgba(0, 0, 0, 0.678);
+    height: 120px;
+}
+
+.historico .produto:hover {
+    color: black;
+    background-color: rgb(236, 244, 247);
+}
+
+.historico .produto p {
+    color: rgba(0, 128, 0, 0.658);
+}

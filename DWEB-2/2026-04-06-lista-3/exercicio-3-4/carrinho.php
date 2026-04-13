@@ -11,7 +11,6 @@ $total = 0;
 if (isset($_POST['limpar_carrinho']) && $_POST['limpar_carrinho'] == 1)
     unset($_SESSION['carrinho']);
 
-
 if (isset($_SESSION['carrinho']) && $_SESSION['carrinho'] != []) {
     $idItens = $_SESSION['carrinho'];
     $placeholder = rtrim(str_repeat('?,', count($idItens)), ',');
@@ -80,9 +79,7 @@ if (isset($_SESSION['carrinho']) && $_SESSION['carrinho'] != []) {
         <input type="submit" value="Limpar Carrinho" class="btn">
     </form>
 
-    <a href="index.php" class="btn">
-        <h4>Voltar para itens</h4>
-    </a>
+    <a href="index.php" class="btn">Voltar</a>
 </body>
 
 </html>
