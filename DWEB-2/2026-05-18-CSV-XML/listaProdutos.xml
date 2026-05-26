@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+  <produto>
+    <nome>sabão em pó</nome>
+    <peso>1kg</peso>
+    <preco>24,00</preco>
+  </produto>
+  <produto>
+    <nome>feijão</nome>
+    <peso>500g</peso>
+    <preco>18,50</preco>
+  </produto>
+  <produto>
+    <nome>pão frances</nome>
+    <peso>1kg</peso>
+    <preco>20,00</preco>
+  </produto>
+  <produto>
+    <nome>bandeija de limão</nome>
+    <peso>250g</peso>
+    <preco>50,80</preco>
+  </produto>
+  <produto>
+    <nome>Farinha</nome>
+    <peso>5kg</peso>
+    <preco>11,30</preco>
+  </produto>
+  <produto>
+    <nome>Melancia</nome>
+    <peso>15</peso>
+    <preco>25.6</preco>
+  </produto>
+  <produto>
+    <nome>Produtio</nome>
+    <peso>43</peso>
+    <preco>55</preco>
+  </produto>
+  <produto>
+    <nome>Butia</nome>
+    <peso>0.6</peso>
+    <preco>3</preco>
+  </produto>
+</lista>
