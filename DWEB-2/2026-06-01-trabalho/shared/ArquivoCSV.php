@@ -11,7 +11,7 @@ class ArquivoCSV
         if (($handle = fopen($arquivo, 'r')) !== FALSE) {
 
             while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
-                array_push($lista, $data);
+                if ($row != 1) array_push($lista, $data);
                 $row++;
             }
             fclose($handle);
