@@ -1,0 +1,148 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.fase1 { background: linear-gradient(135deg, #0f172a, #334155); }
+.fase2 { background: linear-gradient(135deg, #1d4ed8, #60a5fa); }
+.fase3 { background: linear-gradient(135deg, #047857, #34d399); }
+.fase4 { background: linear-gradient(135deg, #b45309, #fbbf24); }
+.fase5 { background: linear-gradient(135deg, #7c3aed, #c084fc); }
+.fase6 { background: linear-gradient(135deg, #b8860b, #ffd700); }
+
+.fase {
+    padding: 20px;
+    color: white;
+}
+
+.jogos .jogo,
+.final .jogo {
+    background: rgba(255,255,255,.15);
+    color: white;
+}
+
+.jogos,
+.jogos-brasil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.jogo {
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+    transition: .2s;
+}
+
+.data {
+    margin: 0;
+}
+
+.jogos .data {
+    color: #ffe082;
+}
+.jogo:hover {
+    transform: translateY(-5px);
+}
+
+.jogos-brasil {
+    background: linear-gradient(135deg, #009739, #ffdf00);
+}
+
+.jogos-brasil .jogo {
+    background: white;
+    color: #222;
+    border: 3px solid #009739;
+}
+
+.jogos-brasil .times {
+    color: #002776;
+}
+
+.estatisticas {
+    max-width: 50%;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #1e293b;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.classificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.classificacao .card {
+    color: black;
+}
+
+.final {
+    background: linear-gradient(135deg, #b8860b, #ffd700);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.final .jogo {
+    width: 320px;
+}
+
+.placar {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: rgb(6, 141, 6);
+}
+
+.mais-faltas {
+    background: linear-gradient(135deg, #603d7c, #573fdf);
+}
+
+.mais-faltas h3 {
+    width: 100%;
+    color: aliceblue;
+}
