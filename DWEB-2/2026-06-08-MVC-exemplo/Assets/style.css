@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    color: #1b5e20;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fase {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.jogo {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.estatisticas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.estatisticas li {
+    background: #eeeeee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.final {
+    border: 2px solid #1b5e20;
+}
+
+.campeao {
+    text-align: center;
+    font-size: 28px;
+    color: green;
+    font-weight: bold;
+}
