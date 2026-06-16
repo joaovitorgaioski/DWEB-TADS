@@ -1,0 +1,201 @@
+id;titulo;autor;categoria;ano;paginas
+1;Clean Code;Robert Martin;Programação;2008;464
+2;Código Limpo na Prática;Mauricio Aniche;Programação;2019;320
+3;Engenharia de Software;Ian Sommerville;Engenharia;2018;720
+4;Use a Cabeça Java;Kathy Sierra;Programação;2005;688
+5;Banco de Dados;Ramez Elmasri;Banco de Dados;2019;850
+6;Design Patterns;Erich Gamma;Programação;1994;395
+7;Refactoring;Martin Fowler;Programação;2018;448
+8;Estruturas de Dados;Thomas Cormen;Programação;2009;650
+9;Algoritmos Essenciais;Robert Sedgewick;Programação;2011;550
+10;Sistemas Operacionais;Andrew Tanenbaum;Engenharia;2015;900
+11;Redes de Computadores;Andrew Tanenbaum;Redes;2012;850
+12;Arquitetura de Software;Robert Martin;Engenharia;2017;500
+13;Testes de Software;Mauricio Aniche;Programação;2020;310
+14;Desenvolvimento Web com PHP;Rodrigo Branas;Web;2016;420
+15;Desenvolvimento Web com Java;Joshua Bloch;Web;2014;600
+16;Python para Data Science;Wes McKinney;Data Science;2018;480
+17;Machine Learning Básico;Andrew Ng;IA;2020;350
+18;Deep Learning Introdução;Ian Goodfellow;IA;2021;500
+19;Java para Iniciantes;Kathy Sierra;Programação;2006;620
+20;C++ Avançado;Bjarne Stroustrup;Programação;2013;700
+21;JavaScript Essencial;Douglas Crockford;Web;2015;300
+22;Node.js na Prática;Ryan Dahl;Web;2019;280
+23;Laravel Framework;Taylor Otwell;Web;2020;400
+24;Django Web;Adrian Holovaty;Web;2017;420
+25;Spring Boot;Josh Long;Web;2021;380
+26;Microsserviços;Sam Newman;Engenharia;2019;450
+27;Docker e Kubernetes;Kelsey Hightower;DevOps;2022;390
+28;Git e GitHub;Scott Chacon;DevOps;2014;250
+29;Segurança da Informação;William Stallings;Segurança;2016;600
+30;Criptografia Moderna;Bruce Schneier;Segurança;2018;500
+31;Computação em Nuvem;Thomas Erl;DevOps;2020;520
+32;AWS Fundamentals;Amazon Web Services;DevOps;2021;350
+33;Azure Básico;Microsoft;DevOps;2020;340
+34;Linux para Desenvolvedores;Linus Torvalds;DevOps;2015;450
+35;UX Design;Don Norman;Design;2013;320
+36;UI Design;Steve Krug;Design;2012;280
+37;Mobile Android;Google;Mobile;2019;500
+38;Flutter na Prática;Google;Mobile;2021;420
+39;React do Zero;Meta;Web;2022;360
+40;Vue.js Essencial;Evan You;Web;2021;340
+41;Data Science Aplicada;Joel Grus;Data Science;2019;410
+42;Big Data Essentials;Viktor Mayer;Data Science;2018;480
+43;Inteligência Artificial Moderna;Stuart Russell;IA;2020;530
+44;Compiladores;Alfred Aho;Engenharia;2010;700
+45;Sistemas Distribuídos;George Coulouris;Engenharia;2015;650
+46;Clean Architecture;Robert Martin;Programação;2017;450
+47;Código Limpo Avançado;Mauricio Aniche;Programação;2021;330
+48;Programação Funcional;Paul Chiusano;Programação;2014;420
+49;Python Avançado;Luciano Ramalho;Programação;2019;480
+50;Java Avançado;Joshua Bloch;Programação;2018;500
+51;Arquitetura Moderna de Sistemas;Martin Fowler;Engenharia;2020;510
+52;Banco de Dados Relacional;Elmasri;Banco de Dados;2017;700
+53;SQL Essencial;Alan Beaulieu;Banco de Dados;2016;350
+54;NoSQL na Prática;Dan Pritchett;Banco de Dados;2019;400
+55;MongoDB Essencial;Kristina Chodorow;Banco de Dados;2018;320
+56;Redis em Ação;Josiah Carlson;Banco de Dados;2020;300
+57;Estruturas Avançadas;Cormen;Programação;2012;600
+58;Algoritmos em Java;Robert Lafore;Programação;2011;550
+59;Algoritmos em Python;Magnus Lie Hetland;Programação;2015;480
+60;Programação Orientada a Objetos;Booch;Programação;2010;500
+61;Design de Software;Martin Fowler;Engenharia;2016;450
+62;Refatoração Avançada;Martin Fowler;Programação;2020;460
+63;Testes Automatizados;Kent Beck;Programação;2018;380
+64;TDD na Prática;Kent Beck;Programação;2019;350
+65;Desenvolvimento Ágil;Ken Schwaber;Engenharia;2017;420
+66;Scrum Essencial;Jeff Sutherland;Engenharia;2018;300
+67;Kanban na Prática;David Anderson;Engenharia;2019;280
+68;DevOps Handbook;Gene Kim;DevOps;2021;500
+69;Infraestrutura como Código;Kief Morris;DevOps;2020;420
+70;Terraform Essencial;HashiCorp;DevOps;2022;360
+71;Segurança em Redes;William Stallings;Segurança;2017;600
+72;Hacking Ético;Kevin Mitnick;Segurança;2016;450
+73;Criptografia Aplicada;Bruce Schneier;Segurança;2019;480
+74;Forense Digital;Chris Palmer;Segurança;2020;500
+75;Cloud Computing Avançado;Thomas Erl;DevOps;2021;550
+76;Arquitetura Cloud;Mark Richards;DevOps;2022;480
+77;AWS Avançado;Amazon;DevOps;2023;400
+78;Azure Avançado;Microsoft;DevOps;2023;390
+79;Google Cloud;Google;DevOps;2022;410
+80;Kubernetes Avançado;Kelsey Hightower;DevOps;2023;450
+81;Machine Learning Avançado;Andrew Ng;IA;2021;500
+82;Deep Learning com Python;François Chollet;IA;2020;450
+83;Redes Neurais;Ian Goodfellow;IA;2019;520
+84;IA na Prática;Stuart Russell;IA;2022;530
+85;Robótica Inteligente;Sebastian Thrun;IA;2021;480
+86;Visão Computacional;Richard Szeliski;IA;2020;600
+87;Processamento de Linguagem Natural;Daniel Jurafsky;IA;2022;550
+88;Data Mining;Jiawei Han;Data Science;2018;650
+89;Estatística para Dados;Peter Bruce;Data Science;2017;400
+90;Python Data Analysis;Wes McKinney;Data Science;2019;420
+91;R para Estatística;Hadley Wickham;Data Science;2018;380
+92;Data Visualization;Edward Tufte;Data Science;2016;300
+93;Web Moderna com PHP;Rodrigo Branas;Web;2018;420
+94;Laravel Avançado;Taylor Otwell;Web;2021;410
+95;Symfony Essencial;Fabien Potencier;Web;2020;400
+96;Spring Framework;Josh Long;Web;2022;450
+97;React Avançado;Meta;Web;2023;380
+98;Angular Essencial;Google;Web;2021;360
+99;TypeScript na Prática;Microsoft;Web;2022;340
+100;Node.js Avançado;Ryan Dahl;Web;2023;370
+101;JavaScript Moderno;Douglas Crockford;Web;2020;330
+102;HTML e CSS;Jon Duckett;Web;2016;320
+103;UX Avançado;Don Norman;Design;2018;350
+104;UI Moderna;Steve Krug;Design;2019;300
+105;Design Thinking;Tim Brown;Design;2020;280
+106;Mobile Flutter Avançado;Google;Mobile;2022;420
+107;Android Avançado;Google;Mobile;2021;480
+108;iOS Development;Apple;Mobile;2020;500
+109;Swift Programming;Apple;Mobile;2021;450
+110;Kotlin Essencial;JetBrains;Mobile;2022;400
+111;C# e .NET;Microsoft;Programação;2018;600
+112;ASP.NET Core;Microsoft;Web;2020;500
+113;PHP Avançado;Rodrigo Branas;Web;2019;450
+114;Python Web;Django Software Foundation;Web;2020;420
+115;Flask na Prática;Armin Ronacher;Web;2019;380
+116;Arquitetura Hexagonal;Alistair Cockburn;Engenharia;2018;400
+117;Domain Driven Design;Eric Evans;Engenharia;2016;500
+118;Clean Code Avançado;Robert Martin;Programação;2020;470
+119;Refactoring UI;Adam Wathan;Design;2021;300
+120;System Design;Alex Xu;Engenharia;2022;520
+121;Algoritmos Avançados;Cormen;Programação;2013;650
+122;Estruturas Complexas;Robert Sedgewick;Programação;2014;600
+123;Banco de Dados Avançado;Elmasri;Banco de Dados;2021;800
+124;SQL Avançado;Alan Beaulieu;Banco de Dados;2020;360
+125;NoSQL Distribuído;Dan Pritchett;Banco de Dados;2021;420
+126;MongoDB Avançado;Kristina Chodorow;Banco de Dados;2020;340
+127;Redis Avançado;Josiah Carlson;Banco de Dados;2021;320
+128;Linux Avançado;Linus Torvalds;DevOps;2020;480
+129;Shell Script;William Shotts;DevOps;2018;300
+130;Automação DevOps;Gene Kim;DevOps;2022;450
+131;Segurança Web;OWASP;Segurança;2021;500
+132;Pentest Básico;Kevin Mitnick;Segurança;2019;420
+133;Criptografia Avançada;Bruce Schneier;Segurança;2020;520
+134;Cloud Security;Thomas Erl;Segurança;2022;480
+135;IA Generativa;OpenAI;IA;2023;400
+136;Transformers em IA;Google;IA;2023;420
+137;Chatbots Inteligentes;OpenAI;IA;2022;380
+138;Data Engineering;Maxime Beauchemin;Data Science;2021;500
+139;ETL e Data Pipelines;DataBricks;Data Science;2022;450
+140;Spark na Prática;Apache;Data Science;2020;480
+141;Hadoop Essencial;Apache;Data Science;2019;500
+142;Data Warehouse;Ralph Kimball;Data Science;2018;550
+143;Web API REST;Roy Fielding;Web;2017;400
+144;GraphQL Essencial;Facebook;Web;2020;360
+145;Micro Frontends;Cam Jackson;Web;2021;420
+146;Frontend Moderno;Meta;Web;2022;380
+147;Backend Avançado;Martin Fowler;Web;2021;450
+148;Programação Paralela;Andrew Tanenbaum;Engenharia;2016;500
+149;Sistemas em Tempo Real;Silberschatz;Engenharia;2017;520
+150;Arquitetura Distribuída;George Coulouris;Engenharia;2018;600
+151;Compiladores Avançados;Alfred Aho;Engenharia;2019;700
+152;Teoria da Computação;Michael Sipser;Engenharia;2018;650
+153;Matemática para Computação;Cormen;Engenharia;2015;500
+154;Lógica de Programação;Forbellone;Programação;2010;300
+155;Programação Básica;Deitel;Programação;2009;450
+156;Java Essencial;Kathy Sierra;Programação;2011;500
+157;C Essencial;Dennis Ritchie;Programação;2008;400
+158;C++ Moderno;Bjarne Stroustrup;Programação;2020;600
+159;Go na Prática;Google;Programação;2021;380
+160;Rust Essencial;Mozilla;Programação;2022;420
+161;Elixir Avançado;José Valim;Programação;2023;400
+162;Scala Funcional;Martin Odersky;Programação;2021;450
+163;Programação Concorrente;Herlihy;Programação;2017;500
+164;Sistemas Operacionais Modernos;Tanenbaum;Engenharia;2019;850
+165;Redes Avançadas;Kurose;Redes;2020;700
+166;Protocolos de Rede;Kurose;Redes;2018;600
+167;Segurança em Redes Avançada;Stallings;Segurança;2020;650
+168;Firewall e IDS;William Stallings;Segurança;2019;480
+169;Cybersecurity Essentials;Kevin Mitnick;Segurança;2021;500
+170;IA Aplicada;Stuart Russell;IA;2023;520
+171;Aprendizado de Máquina Prático;Andrew Ng;IA;2022;480
+172;Deep Learning Avançado;Ian Goodfellow;IA;2023;550
+173;Visão Computacional Avançada;Szeliski;IA;2022;600
+174;NLP Avançado;Jurafsky;IA;2023;550
+175;Data Science Avançada;Hadley Wickham;Data Science;2022;450
+176;Estatística Aplicada;Peter Bruce;Data Science;2021;420
+177;Big Data Avançado;Viktor Mayer;Data Science;2020;500
+178;Spark Avançado;Apache;Data Science;2021;480
+179;Hadoop Avançado;Apache;Data Science;2020;520
+180;Data Engineering Avançado;Beauchemin;Data Science;2023;500
+181;Frontend React Avançado;Meta;Web;2023;400
+182;Vue Avançado;Evan You;Web;2022;380
+183;Angular Avançado;Google;Web;2021;420
+184;Node.js Escalável;Ryan Dahl;Web;2022;390
+185;Backend Escalável;Martin Fowler;Web;2023;450
+186;DevOps Prático;Gene Kim;DevOps;2023;480
+187;Infraestrutura Moderna;Kief Morris;DevOps;2022;450
+188;Cloud AWS Avançado;Amazon;DevOps;2023;400
+189;Cloud Azure Avançado;Microsoft;DevOps;2023;400
+190;Cloud Google Avançado;Google;DevOps;2023;420
+191;Segurança Cloud;Thomas Erl;Segurança;2023;500
+192;Criptografia Moderna;Bruce Schneier;Segurança;2022;520
+193;Pentest Avançado;Kevin Mitnick;Segurança;2023;480
+194;UX Research;Don Norman;Design;2021;320
+195;UI Avançado;Steve Krug;Design;2022;300
+196;Design Systems;Google;Design;2023;350
+197;Mobile Cross Platform;Google;Mobile;2023;420
+198;Flutter Avançado;Google;Mobile;2023;440
+199;Android Jetpack;Google;Mobile;2022;480
+200;Swift Avançado;Apple;Mobile;2023;460
