@@ -1,0 +1,34 @@
+Passos para inclusão do Hibernate no seu projeto JAVAEE
+
+1. Adicione as seguintes dependências ao arquivo pom.xml
+
+<dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>7.0.0.Final</version>
+</dependency>
+
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>9.3.0</version>
+</dependency>
+
+2. Adicione as classes a seguir ao package br.edu.ifpr.irati.ads
+Dao
+GenericDao
+HibernateUtil
+Telefone
+ExemploScriptTelefone
+
+3. Modifique o arquivo HibernateUtil alterando a senha do usuário (root ou web3_user) do mysql
+altere também o schema para web3_database
+
+4. Crie uma nova classe para o exercício e anote-a apropriadamente (ver exemplo do telefone)
+
+5. Adicione a classe no HibernateUtil
+
+metadataSources.addAnnotatedClass(SuaClasse.class);
+
+6. Adicione o código necessário para a persistência ao seu Servlet.
+Ver código de exemplo contido em ExemploScriptTelefone
