@@ -46,7 +46,7 @@
                 session.setAttribute("usuarios", usuarioDao.buscarTodos(bdSession));
             }
         }
-        response.sendRedirect("cadastro.jsp");
+        response.sendRedirect("formusuario.jsp");
     }catch (HibernateException he) {
         throw new Exception("Conexão com o banco de dados indisponível");
     }

@@ -27,9 +27,9 @@ public class HibernateUtil {
             String password = p.get("db_password").toString();
 
             Map<String, Object> settings = new HashMap<>();
-            settings.put("connection.driver_class","com.mysql.cj.jdbc.Driver");
-            settings.put("dialect","org.hibernate.dialect.MySQLDialect");
-            settings.put("hibernate.connection.url","jdbc:mysql://"+host+":"+port+"/"+schema+"?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8");
+            settings.put("hibernate.connection.driver_class", "org.mariadb.jdbc.Driver");
+            settings.put("hibernate.dialect", "org.hibernate.dialect.MariaDBDialect");
+            settings.put("hibernate.connection.url","jdbc:mariadb://"+host+":"+port+"/"+schema+"?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8");
             settings.put("hibernate.connection.username",user);
             settings.put("hibernate.connection.password",password);
             settings.put("hibernate.hbm2ddl.auto","update"); // none | create | update
