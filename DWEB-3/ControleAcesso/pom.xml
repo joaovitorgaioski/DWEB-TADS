@@ -83,6 +83,11 @@
             <scope>runtime</scope>
         </dependency>
 
+        <dependency>
+            <groupId>br.edu.ifpr.irati.ads.customjakartamail</groupId>
+            <artifactId>CustomJakartaMail</artifactId>
+            <version>1.0.1</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -90,7 +95,5 @@
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-
 
 </project>

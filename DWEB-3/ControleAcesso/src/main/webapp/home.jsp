@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Home</h1>
-    <p>Usuário logado: <%=usuario.getEmail()%>
-</p>
+    <p>Usuário logado: <%=usuario.getEmail()%></p>
+    <a href="logout">Logout</a>
 </body>
 </html>
