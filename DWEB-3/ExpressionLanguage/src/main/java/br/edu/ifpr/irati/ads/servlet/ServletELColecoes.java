@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-@WebServlet(name = "servletcolecoes", urlPatterns = "/servletelcolecoes")
+@WebServlet(name = "servletelcolecoes", urlPatterns = "/servletelcolecoes")
 public class ServletELColecoes extends HttpServlet {
 
     @Override
@@ -39,7 +39,7 @@ public class ServletELColecoes extends HttpServlet {
         session.setAttribute("carros", carros);
         session.setAttribute("estados", estados);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("exemploelcolecoes.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("exemplos-el/exemploelcolecoes.jsp");
         dispatcher.forward(req, resp);
     }
 }

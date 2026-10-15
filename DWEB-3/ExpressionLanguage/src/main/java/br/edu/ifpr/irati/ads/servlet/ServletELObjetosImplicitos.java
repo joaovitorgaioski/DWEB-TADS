@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "servletobjetosimplicitos", urlPatterns = "/servletelobjimpl")
+@WebServlet(name = "servletelobjetosimplicitos", urlPatterns = "/servletelobjimpl")
 public class ServletELObjetosImplicitos extends HttpServlet {
 
     @Override
@@ -22,7 +22,7 @@ public class ServletELObjetosImplicitos extends HttpServlet {
 
         req.setAttribute("parametro", "param request");
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("exemploelobjimpl.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("exemplos-el/exemploelobjimpl.jsp");
         dispatcher.forward(req, resp);
     }
 }

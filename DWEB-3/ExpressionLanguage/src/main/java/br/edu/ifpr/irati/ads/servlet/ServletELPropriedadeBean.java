@@ -11,18 +11,19 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "servletpropriedadebean", urlPatterns = "/servletpropriedadebean")
+@WebServlet(name = "servletelpropriedadebean", urlPatterns = "/servletelpropriedadebean")
 public class ServletELPropriedadeBean extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Usuario usuario = new Usuario(10L, "João Vitor", "joao@gmail.com", "123");
+        Usuario usuario = new Usuario(10L, "joao@gmail.com", "123", "");
 
         HttpSession session = req.getSession();
         session.setAttribute("usuario", usuario);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("exemplopropriedadebean.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("exemplos-el/exemploelpropriedadebean.jsp");
         dispatcher.forward(req, resp);
+
     }
 }

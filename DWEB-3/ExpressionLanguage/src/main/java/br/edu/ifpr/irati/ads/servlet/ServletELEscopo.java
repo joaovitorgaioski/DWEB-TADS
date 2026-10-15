@@ -26,7 +26,7 @@ public class ServletELEscopo extends HttpServlet {
 
         req.setAttribute("atributoRequest", "Esse é o valor do atributo armazenado no request");
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("exemploelescopo.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("exemplos-el/exemploelescopo.jsp");
         dispatcher.forward(req, resp);
     }
 }
