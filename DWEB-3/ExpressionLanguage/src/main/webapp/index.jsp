@@ -20,6 +20,9 @@
     <h2>Relação de exercícios</h2>
 
     <p> Exercício 1 - Moedas [<a href="converter">Link</a>] </p>
+    <p> Exercício 8 - Funcionários [<a href="funcionarios">Link</a>] </p>
+    <p> Exercício 7 - Carrinho [<a href="carrinho">Link</a>] </p>
+    <p> Exercicio 6 - Livros [<a href="livros">Link</a>] </p>
 
 </body>
 </html>

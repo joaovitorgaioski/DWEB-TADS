@@ -8,5 +8,6 @@
 </head>
 <body>
     <p>Algo deu muito errado!</p>
+    <a href="index.jsp">Voltar à index</a>
 </body>
 </html>
