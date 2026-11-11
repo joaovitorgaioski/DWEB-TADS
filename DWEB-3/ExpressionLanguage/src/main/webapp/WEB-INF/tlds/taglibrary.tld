@@ -32,4 +32,17 @@
         <function-signature>int divisao(int,int)</function-signature>
     </function>
 
+
+    <function>
+        <name>celsiusParaFahrenheit</name>
+        <function-class>br.edu.ifpr.irati.ads.util.ConversaoTemperatura</function-class>
+        <function-signature>double celsiusParaFahrenheit(double)</function-signature>
+    </function>
+
+    <function>
+        <name>celsiusParaKelvin</name>
+        <function-class>br.edu.ifpr.irati.ads.util.ConversaoTemperatura</function-class>
+        <function-signature>double celsiusParaKelvin(double)</function-signature>
+    </function>
+
 </taglib>
