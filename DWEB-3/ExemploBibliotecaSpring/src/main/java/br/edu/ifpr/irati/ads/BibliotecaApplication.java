@@ -50,6 +50,7 @@ public class BibliotecaApplication {
         return this.applicationNameConf;
     }
 
+    /*
     // CLR pra testar o Repository
     @Bean
     public CommandLineRunner init(@Autowired UsuarioSpringDataRepository usuarioRepository) {
@@ -71,6 +72,7 @@ public class BibliotecaApplication {
             System.out.println(usuarioRepository.findByNome("Maurício"));
         };
     }
+    */
 
     static void main(String[] args) {
         // O run da aplicação é dado por este comando

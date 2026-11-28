@@ -1,4 +1,4 @@
-# Anotações da Aula de Spring
+# Anotações das Aulas de Spring
 
 ## Beans e Configurations
 
@@ -37,7 +37,8 @@
 * @Service indica as classes que implementam as regras de negócio.
 
 1. Quando as classes são anotadas, suas instâncias ficam dentro do container e podem ser injetadas em partes do código.
-2. Para indicar explicitamente quais pacotes devem ser mapeados, usa-se a anotação
+2. Para obter os valores de componentes, usamos `@Autowired`.
+3. Para indicar explicitamente quais pacotes devem ser mapeados, usa-se a anotação
    `@ComponentScan`. Senão, ele mapeia todo o projeto.
 
 ## `application.properties`
@@ -69,9 +70,9 @@
 
 ### Bancos em Memória
 
-> Bancos de dados em memória são recursos utilizados para aplicações que demandam extrema velocidade, tanto para escrita
-> quanto para leitura de dados. Em geral, aplicações de tempo real. Alguns exemplos são: Redis, Amazon MemoryDB,
-> ElastiCache.
+Bancos de dados em memória são recursos utilizados para aplicações que demandam extrema velocidade, tanto para escrita
+quanto para leitura de dados. Em geral, aplicações de tempo real. Alguns exemplos são: Redis, Amazon MemoryDB,
+ElastiCache.
 
 1. No exemplo desse projeto, usamos o banco de dados h2.
 2. Definimos as configurações de acesso no `application.properties`.
@@ -96,10 +97,68 @@
 2. Essa interface deve extender de `JpaRepository<Classe, TipoId>`.
 
 ```
-@Repository
-public interface UsuarioSpringDataRepository extends JpaRepository<Usuario, Integer> {}
+   @Repository
+   public interface UsuarioSpringDataRepository extends JpaRepository<Usuario, Integer> {}
 ```
 
 3. Para os métodos, basta colocar nome específicos. Exemplo: `List<Usuario> findByNomeLike(String nome);`.
 4. <a href="https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html">São conhecidos como Query
-   Methods<a/>.
+   Methods</a>.
+
+## API Restful
+
+### Controller
+
+1. As requisições chegam em um Controller anotado com `@Controller`.
+2. Para ler as chamadas, usamos anotações em métodos como `@PostMapping`, `@GetMapping`,
+   `@DeleteMapping`, etc.
+3. Os métodos devolvem uma resposta, um `ResponseEntity`.
+4. Podemos obter dados da requisição usando, por exemplo `@RequestBody`, `@PathVariable()`,
+   `@RequestParam`, etc.
+5. Exemplo de GET:
+
+```
+@GetMapping("/api/usuarios/{id}")
+    public ResponseEntity getUsuarioById(@PathVariable("id") Integer id) {
+        Optional<Usuario> usuario = repository.findById(id);
+
+        if (usuario.isPresent()) return ResponseEntity.ok(usuario.get());
+        return ResponseEntity.notFound().build();
+    }
+```
+
+6. Caminhos podem ser os mesmos, mas devem haver verbos HTTP diferentes.
+7. `ResponseEntity` possui diversos códigos HTTP disponíveis para retornar.
+8. Exemplo de PUT:
+
+```
+@PutMapping("/api/usuarios/{id}")
+    @ResponseBody
+    public ResponseEntity update(@RequestBody Usuario usuario, @PathVariable("id") Integer id) {
+        return repository
+                .findById(id)
+                .map(usuarioExistente -> {
+                    usuarioExistente.setId(id);
+                    repository.save(usuario);
+                    return ResponseEntity.noContent().build();
+                }).orElseGet(() -> ResponseEntity.notFound().build());
+    }
+```
+
+### RestController
+
+Semelhante, mas usamos técnicas que deixam o trabalho mais fácil.
+
+1. As requisições chegam em `@RestController`.
+2. A anotação `@RequestMapping()` indica um caminho padrão para aquele controlador.
+3. A anotação `@ResponseStatus(HttpStatus.[tipo])` define o tipo de retorno quando há sucesso.
+4. Exemplo de GET:
+
+```
+   @GetMapping("{id}")
+   public Usuario getUsuarioById(@PathVariable("id") Integer id) {
+       return repository
+               .findById(id)
+               .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuário não encontrado"));
+   }
+```
